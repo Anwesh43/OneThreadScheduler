@@ -25,8 +25,4 @@ public class SchedulerItem {
         return (System.currentTimeMillis() - currTime) >= delay;
     }
 
-    @FunctionalInterface
-    private interface Executable {
-        void execute();
-    }
 }
