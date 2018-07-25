@@ -1,6 +1,5 @@
 package com.anwesh.impl;
 
-import java.util.function.Function;
 
 public class SchedulerItem {
 

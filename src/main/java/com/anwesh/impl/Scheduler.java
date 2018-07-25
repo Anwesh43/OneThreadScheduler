@@ -23,7 +23,7 @@ public class Scheduler {
     private void start() {
         new Thread(() -> {
             while(true) {
-                schedulerItems.stream().filter(item -> item.shouldExecute()).forEach(item -> item.shouldExecute());
+                schedulerItems.stream().filter(item -> item.shouldExecute()).forEach(item -> item.execute());
             }
         }).start();
     }
